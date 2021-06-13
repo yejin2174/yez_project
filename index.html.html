@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lage="ko-KR">
+<head>
+    <meta charset="UTF-8"> 
+    <title>SeMA</title>
+</head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar{
+    height: 100px;
+    background-color: white;
+    
+}
+
+.navbar h2{
+    float: left;
+    margin-left: 30px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-family: 'Krona One', sans-serif; 
+    font-size: 30px;
+}
+.navbar .manu{
+    float: right;
+    list-style: none;
+}
+.navbar .manu li{
+    float: left;
+    margin-right: 30px;
+    line-height: 100px;
+}
+.navbar .manu a{
+    font-family: 'Krona One', sans-serif;
+    font-size: 12pt;
+    font-weight: reguler;
+    text-decoration: none;
+    color: black;
+}
+.manu li a:hover{
+    color: yellow;
+}
+
+.mainbar {
+    width: 100%;
+    height: 260px;
+
+}
+.header{
+    width: 60%;
+   
+    background-size: cover;
+    background-position: center;
+    float: left;
+
+
+}
+
+
+
+.header p{
+    margin-left: 100px;
+    height: 260px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 50pt;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+
+}
+
+.picture img{
+    width: 160px;
+    height: 100px;
+    float: right;
+    margin-right: 48px;
+}
+
+.header2 p{
+    
+    height: 260px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 16pt;
+    font-weight: 700;
+    float: right;
+    margin-right: 100px;
+    color: black;
+    text-align: right;
+    padding-top: 230px;
+    margin-bottom: 60px;
+}
+
+.box{
+    margin-top: 60px;
+    width: 1304px;
+    margin-right: auto;
+    margin-left: auto;  
+
+}
+
+.group{
+   
+    width: 788px;
+    height: 1000px;
+    
+}
+
+.main{
+    width: 100%;
+    height: 706px;
+
+}
+
+.exhibition{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 60px;
+    width: 780px;
+    height: 706px;
+
+    float: left;
+    
+    
+    
+}
+
+.exhibition-item{
+    float: left;
+}
+
+.exhibition-item2{
+    float: left;
+}
+
+
+.exhibition-item img{
+    margin-top: 40px;
+    margin-right: 60px;
+    width: 220px;
+    height: 300px;
+    float: bottom;
+}
+
+.exhibition-item2 img{
+    margin-top: 40px;
+    
+    width: 224px;
+    height: 300px;
+    float: bottom;
+}
+
+.exhibition-item3 img{
+    margin-top: 40px;
+    
+    width: 224px;
+    height: 300px;
+    float: bottom;
+}
+
+.exhibition-item {
+    float: left;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.exhibition-item .type{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 18pt;
+    font-weight: 400;
+    text-align: left; 
+    
+
+
+}
+
+.exhibition-item .name{
+    margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: 700;
+    text-align: left; 
+    color: #BDBDBD;
+   
+    
+}
+
+.exhibition-item .infor{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 10pt;
+    font-weight: 400;
+    text-align: lfet; 
+    
+    
+}
+
+.exhibition-item .icon{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 140px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: lfet; 
+    
+    
+}
+
+.exhibition-item2 {
+    float: left;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.exhibition-item2 .type{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 18pt;
+    font-weight: 400;
+    text-align: left; 
+    
+
+
+}
+
+.exhibition-item2 .name{
+    margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: 700;
+    text-align: left; 
+    color: #BDBDBD;
+   
+    
+}
+
+.exhibition-item2 .infor{
+    
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 10pt;
+    font-weight: 400;
+    text-align: lfet; 
+    
+    
+}
+
+.exhibition-item2 .icon{
+    margin-bottom: 50px;
+    margin-left: 140px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: lfet; 
+    
+    
+}
+
+.museam{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+ 
+
+    margin-left: 80px;
+    
+    width: 470px;
+    height: 706px;
+    float: left;
+
+}
+
+
+.museam p {
+    float: left;
+    text-decoration: none;
+    color: black;  
+    line-height: 100px;
+    width: 470;
+    
+
+
+}
+
+.museam .name {
+   
+    
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left; 
+    
+}
+
+.museam .icon {
+    
+    margin-left: 270px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: right; 
+    
+}
+
+.museam2 .name {
+   
+    
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left; 
+    
+}
+
+.museam2 .icon {
+    
+    margin-left: 246px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: right; 
+    
+}
+
+.museam3 .name {
+   
+    
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left; 
+    
+}
+
+.museam3 .icon {
+    
+    margin-left: 140px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: right; 
+    
+}
+
+.museam4 .name {
+   
+    
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left; 
+    
+}
+
+.museam4 .icon {
+    
+    margin-left: 276px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 50pt;
+    font-weight: 200;
+    text-align: right; 
+    
+}
+
+.museam1{
+    height: 100px;
+    width: 470px;
+    border-bottom: 1px solid #BDBDBD;
+    
+}
+
+.museam2{
+    height: 100px;
+    width: 470px;
+}
+
+.museam1 :hover{
+    background-color: yellow;
+    width: 470px;
+    height: 100px;
+}
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-top: 120px;
+
+}
+
+
+
+.footer p{
+
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: 400;
+    color: #BDBDBD;
+    padding-top: 24px;
+    margin-left: 60px;
+    float: left;
+
+
+}
+
+.footer a{
+    float: left;
+    padding-top: 60px;
+    margin-left: 20px;
+
+}
+
+.Back-to-Top {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    font-size: 40pt;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 100px;
+}
+
+
+</style>
+
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" >
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+    <div class="navbar">
+        <h2>SeMA</h2>
+        <ul class="manu">
+            <li><a href="file:///C:/Users/%EC%84%9C%EC%98%88%EC%A7%84/Desktop/%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.html#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">login</a></li>
+        </ul>
+    </div>
+
+<div class="mainbar">
+    <div class="header">
+        <p>Seoul<br>Museum<br>of Art</p></div>
+
+    <!--<div class="picture">
+        <a class="exhibition-item" href="#">
+               <img src="https://i.postimg.cc/NMwtrdFs/Untitled-1.png" alt="">
+           </div>-->
+
+    <div class="header2">
+        <p>사용자, 매개자, 생산자가 함께<br> 만드는 ‘서울형 네트워크’ 미술관</p></div>
+</div>
+
+
+        <div class="main">
+            <div class="box">
+                <div class="exhibition">
+                    <div class="group">
+                <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2021%2F&FILE_NM=20210604112208_6d50d71d2ef14826b48c314a98cf074f_9f79bd7cd1764128a4bf1da79e7469f7" alt="">
+               <p class="type">전보배 개인전<br>《noonchinae》</p>
+               <p class="name">SeMA창고  1층 전시실</p>
+               <p class="infor">김범 작가의 책 『눈치』에 등장하는 눈<br>에 보이지 않는 개 ‘눈치’를 사랑해 줄 수<br>있는 방법에 대해 탐구하는 전시</p>
+               <p class="icon">→</p></a>
+
+               <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2021%2F&FILE_NM=20210528155707_e39769abd61d423f908d3aad4b810a5e_90b4b8277a624375b6e77b660b5649cb" alt="">
+               <p class="type">이재석 개인전<br>《INVENTORY》</p>
+               <p class="name">SeMA창고  1층 전시실</p>
+               <p class="infor">창고의 물리적 공간과 작가가 생각하는<br> 가상의 저장고를 연결해 가상과 현실이<br> 공존하는 공간의 연출을 시도</p>
+               <p class="icon">→</p></a>
+
+               <a class="exhibition-item2" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2021%2F&FILE_NM=20210408112631_7deefe4a311245de91926ae8a0da6af5_3218ae65a7cf48bb8eba01fd1f2fc39a" alt="">
+               <p class="type">일반 전시<br>《호민과 재환》</p>
+               <p class="name">서소문본관  2,3층 전시실</p>
+               <p class="infor">한국 현대사의 주요 이슈들을 유머러스,<br> 날카로운 시선으로 조망한 주재환과, 한<br>국 신화를 기반으로 삶과 죽음의 경계를<br> 해석한 웹툰작가 주호민 부자의 2인전</p>
+               <p class="icon">→</p></a>
+               </div>
+               </div>
+           </div> 
+
+
+
+                <div class="museam">
+
+                    <div class="museam1">
+                    <a href="#" class="museam1">
+                        <p class="name">서소문 본관</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam2" href="file:///C:/Users/%EC%84%9C%EC%98%88%EC%A7%84/Desktop/%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC_%EC%86%8C%EA%B0%9C%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%88%98%EC%A0%95.html">
+                        <p class="name">북서울 미술관</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam2" href="#">
+                        <p class="name">남서울 미술관</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam3" href="#">
+                        <p class="name">난지미술 창작 스튜디오</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam4" href="#">
+                        <p class="name">SeMA 창고</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam2" href="#">
+                        <p class="name">백남준 기념관</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+                    <div class="museam1">
+                    <a class="museam4" href="#">
+                        <p class="name">SeMA 벙커</p>
+                        <p class="icon">→</p>
+                    </a></div>
+
+
+                </div>
+            </div>
+           
+     <div class="footer">
+         <p> 04515 서울 중구 덕수궁길 61 <br>02-2124-8800<br>sema@seoul.go.kr / 개인처리방침 / 사이트맵 <br><br><br>©2018 Seoul Museum of Art All rights reserved</p>
+      <a href="http://facebook.com">
+        <img src="https://sema.seoul.go.kr/resources/images/common/ico_youtube.png" height="50">
+      </a>
+      <a href="http://facebook.com">
+        <img src="https://sema.seoul.go.kr/resources/images/common/ico_dosonting.png" height="50">
+      </a>
+
+     </div>
+
+     <a style="display:scroll;position:fixed;bottom:60px;
+     right:60px;" rel="nofollow"
+href="#" class ="Back-to-Top">Λ</a>
+
+</body>

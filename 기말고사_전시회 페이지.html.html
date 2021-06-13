@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lage="ko-KR">
+<head>
+    <meta charset="UTF-8"> 
+    <title>SeMA</title>
+</head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+.navbar{
+    height: 100px;
+    background-color: white;
+}
+
+.navbar h2{
+    float: left;
+    margin-left: 30px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-family: 'Krona One', sans-serif; 
+    font-size: 30px;
+}
+.navbar .manu{
+    float: right;
+    list-style: none;
+}
+.navbar .manu li{
+    float: left;
+    margin-right: 30px;
+    line-height: 100px;
+}
+.navbar .manu a{
+    font-family: 'Krona One', sans-serif;
+    font-size: 12pt;
+    font-weight: reguler;
+    text-decoration: none;
+    color: black;
+}
+.manu li a:hover{
+    color: yellow;
+}
+
+.header{
+    width: 100%;
+    height: 400px;
+    background-image: url(https://i.postimg.cc/DywtBWtr/Untitled-3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header p{
+    height: 400px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    background-size: cover;
+    background-position: center;
+     
+
+}
+
+.small-manu{
+    background-color: white;
+    width: 550px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mmanu{
+    float: left;
+    list-style: none;
+    width: 550;
+    height: 120px;
+    margin-left: 60px;
+    text-align: center;
+
+
+}
+
+.mmanu a:not(:last-child){
+    margin-left: ;
+}
+
+.mmanu li{
+    float: left;
+    margin-top: 36px;
+    line-height: 60px;
+    border-radius: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mmanu {
+    text-align: center;
+}
+
+.mmanu a{
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: bold; 
+    text-decoration: none;
+    color: black;
+    
+    margin-right:24px;
+    margin-left: 24px;
+}
+.mmanu li:hover{
+    background-color: yellow;
+
+}
+
+.mmenu:active{
+    background-color: yellow;
+}
+
+
+}
+
+.element{
+    width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.exhibition-container h3{
+    font-family: 'Krona One', sans-serif; 
+    font-size: 28pt;
+    color: black;
+    font-weight: bold;
+    margin-top: 60px;
+    text-align: center;
+    
+
+}
+.exhibition-container p{
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.exhibition-container{
+    width: 1124px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+.exhibition-item {
+    float: left;
+    text-decoration: none;
+    color: black;
+    
+}
+ 
+.exhibition-item img{
+    margin-top: 60px;
+    width: 334px;
+    height: 400px;
+}
+
+.exhibition-item .type{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: 600;
+    text-align: left; 
+    color: #BDBDBD;
+    
+
+
+}
+
+.exhibition-item .name{
+    margin-top: 4px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 18pt;
+    font-weight: 400;
+    text-align: left; 
+   
+    
+}
+
+.exhibition-item .infor{
+    margin-bottom: 60px;
+    margin-right: 10;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight:400;
+    text-align: left; 
+    color: #777777;
+    
+    
+}
+
+
+.exhibition-item:not(:nth-child(3n)){
+    margin-left: 60px;
+
+}
+
+.exhibition-container2 h3{
+    font-family: 'Krona One', sans-serif; 
+    font-size: 28pt;
+    color: black;
+    font-weight: bold;
+    margin-top: 1600px;
+    text-align: center;
+    
+
+}
+.exhibition-container2 p{
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.exhibition-container2{
+    width: 1124px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+.exhibition-item2:not(:nth-child(3n)){
+    margin-right: 60px;
+
+}
+
+.box{
+    margin-top: 1400px;
+    width: 240px;
+    height: 60px;
+    border: 2px solid #BDBDBD;
+    margin-right: auto;
+    margin-left: auto; 
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 16pt;
+    color: #BDBDBD;
+    font-weight: bold;
+
+
+}
+
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-top: 120px;
+
+}
+
+
+
+.footer p{
+
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 12pt;
+    font-weight: 400;
+    color: #BDBDBD;
+    padding-top: 24px;
+    margin-left: 60px;
+    float: left;
+
+
+}
+
+.footer a{
+    float: left;
+    padding-top: 60px;
+    margin-left: 20px;
+
+}
+
+.Back-to-Top {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    font-size: 40pt;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-radius: 100px;
+}
+
+.exhibition-container img:hover{
+    width: 334px;
+    height: 400px;
+    color: yellow;
+    opacity:0.2; 
+    background-color: yellow;
+    color: transparent;
+
+}
+
+.exhibition-container2 img:hover{
+    width: 334px;
+    height: 400px;
+    color: yellow;
+    opacity:0.2; 
+    background-color: yellow;
+    color: transparent;
+
+}
+</style>
+
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" >
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+    <div class="navbar">
+        <h2>SeMA</h2>
+        <ul class="manu">
+            <li><a href="file:///C:/Users/%EC%84%9C%EC%98%88%EC%A7%84/Desktop/%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC_%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.html#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">login</a></li>
+        </ul>
+    </div>
+
+    <div class="header"><p>북서울 미술관</p></div>
+
+    <div class="small-manu">
+        <ul class="mmanu">
+            <li><a href="file:///C:/Users/%EC%84%9C%EC%98%88%EC%A7%84/Desktop/%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC_%EC%86%8C%EA%B0%9C%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%88%98%EC%A0%95.html#">소개</a></li>
+            <li><a href="#">시설</a></li>
+            <li><a href="#">전시실</a></li>
+            <li><a href="#">찾아오는길</a></li>
+            <li><a href="#">전시</a></li>
+        </ul>
+    </div>
+
+       
+
+     <div class="exhibition-container">
+           <h3> exhibition now</h3>
+           <p>지금 하고있는 전시들이에요!</p>
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2020%2F&FILE_NM=20201216112408_5a859770ab2e4dcc98a86ad5b04b3c32_1150f3aaf5504dd788386bfac647cdf5" alt="">
+               <p class="type">어린이전시</p>
+               <p class="name">와당탕퉁탕</p>
+               <p class="infor">201212-210909</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2021%2F&FILE_NM=20210328162822_e3ec36a25b00476cbcf4ad86f1300c9e_10ee2a278f964dd79af0b30e969a2540" alt="">
+               <p class="type">SeMA 소장품 하이라이트</p>
+               <p class="name">자연을 들이다: 풍경과 정물</p>
+               <p class="infor">210330-210822</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fee%2FECEM0%2F2021%2F&FILE_NM=20210119170750_db1c505dd53d4802b7182fc99730d60b_21da771b86da421983acb03382e9fa73" alt="">
+               <p class="type">미술아카데미</p>
+               <p class="name">'와당탕퉁탕' 연계 온라인 교육<br>'쇼핑일기' </p>
+               <p class="infor">2021.02.02 - 2021.09.09</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fee%2FECEM0%2F2021%2F&FILE_NM=20210525133422_a070c501982044d7aaba144e4e56f9de_9874bf9ec7db4e7f977889a57694b99b" alt="">
+               <p class="type">미술아카데미</p>
+               <p class="name">스터디모임 : <br>그린다그린다그린다그린다그린다</p>
+               <p class="infor">2021.06.30 - 2021.08.11</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_NM=20210510173719_41d1a6f20c8a42578a75e3be41f2619f_d2b750f00f924682962f11bfc70bbb2f&FILE_TYPE=editor" alt="">
+               <p class="type">미술아카데미</p>
+               <p class="name">'자연을 들이다: 풍경과 정물'<br>
+                연계 온라인 교육 <br>
+                '자세히 보아야 예쁘다'</p>
+               <p class="infor">201212-210909</p>
+           </a>
+     </div>
+
+
+     <div class="exhibition-container2">
+    <h3>last exhibition</h3>
+    <p>그동안 했던 전시들이에요!</p>
+     
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2021%2F&FILE_NM=20210527152113_65b7597adcd7475fac29f3be22630777_ba6b7ae89d7645778af0da65c6dcf9f5" alt="">
+               <p class="type">일반전시</p>
+               <p class="name">SF2021: 판타지 오디세이</p>
+               <p class="infor">210323-210606</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2020%2F&FILE_NM=20200925152127_039596925af645e180cd22be98f435a0_b82dd87b4ede4127927d69d2fe6c29ba" alt="">
+               <p class="type">한네프켄재단+SeMA 미디어 소장전</p>
+               <p class="name">파도가 지나간 자리</p>
+               <p class="infor">200903-210214</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2020%2F&FILE_NM=20201123163532_757b50f2959a4845a3f95e2bb07ca5a2_70e7e1386c8d452ba304309ab659d11e" alt="">
+               <p class="type">유휴공간 프로젝트</p>
+               <p class="name">당신의 정원</p>
+               <p class="infor">201124-201220</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2020%2F&FILE_NM=20200422155210_44907d9e87a8483a99c23ba8dd3fb205_725bf02386104d008c28a0dcef5d7060" alt="">
+               <p class="type">어린이전시</p>
+               <p class="name">물체주머니</p>
+               <p class="infor">200326-201115</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2020%2F&FILE_NM=20200721172928_eae56ab436ee4e94bd4055bc27adc9aa_39e8ba682c9e44e4abeb4346abf508d0" alt="">
+               <p class="type">2020 서울사진축제</p>
+               <p class="name">카메라당 전성시대</p>
+               <p class="infor">200714-200816</p>
+           </a>
+
+           <a class="exhibition-item" href="#">
+               <img src="https://sema.seoul.go.kr/common/imageView?FILE_PATH=%2Fex%2FEXI01%2F2019%2F&FILE_NM=20191217144707_b2520a9de1d54ad2987f74d12697391a_44e790c4756c4909901a63ee1090c081" alt="">
+               <p class="type">일반전시</p>
+               <p class="name">레안드로 에를리치:<br> 그림자를 드리우고</p>
+               <p class="infor">191217-200621</p>
+           </a>
+     </div>
+
+
+
+
+     <div class="box">더보기</div>
+
+
+
+    
+    
+
+
+    </div>
+   <div class="footer">
+         <p> 04515 서울 중구 덕수궁길 61 <br>02-2124-8800<br>sema@seoul.go.kr / 개인처리방침 / 사이트맵 <br><br><br>©2018 Seoul Museum of Art All rights reserved</p>
+      <a href="http://facebook.com">
+        <img src="https://sema.seoul.go.kr/resources/images/common/ico_youtube.png" height="50">
+      </a>
+      <a href="http://facebook.com">
+        <img src="https://sema.seoul.go.kr/resources/images/common/ico_dosonting.png" height="50">
+      </a>
+
+     </div>
+
+     <a style="display:scroll;position:fixed;bottom:60px;
+     right:60px;" rel="nofollow"
+href="#" class ="Back-to-Top">Λ</a>
+
+
+</body>
